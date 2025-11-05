@@ -13,8 +13,8 @@
 				"MaxFaceCount": 3,
 				"FaceboxAdjustType": 2,
 				"EnableMouthMask": false,
-				"EnableMouthRobost": true,
-				"EnableEyeRobost": true,
+				"EnableMouthRobost": false,
+				"EnableEyeRobost": false,
 				"EnableForehead": false,
 				"EnableFaceParsing": false,
 				"EnableFace3D": false,
@@ -22,13 +22,25 @@
 				"ModeThread": 1,
 				"EnableGender": true,
 				"EnableAgeDivide": false,
-				"EnableAge": true
+				"EnableAge": false
 			},
 			"XReality": {
 				"Strategy": "Std",
 				"E2E": {
 					"EnableE2EacneLight": false
 				}
+			}
+		},
+		{
+			"Mode": "Preview",
+			"UseFor": "Runtime",
+			"Face": {
+				"EnableFaceParsing": false,
+				"EnableMouthMask": false,
+				"EnableMouthRobost": false,
+				"EnableEyeRobost": false,
+				"EnableForehead": false,
+				"EnableAge": false
 			}
 		},
 		{
@@ -68,6 +80,14 @@
 				"FaceRetouch": {
 					"EnableFaceRetouch": false
 				}
+			}
+		},
+		{
+			"Mode": "Capture",
+			"UseFor": "Runtime",
+			"Face": {
+				"EnableFaceParsing": false,
+				"EnableAge": false
 			}
 		}
 	]

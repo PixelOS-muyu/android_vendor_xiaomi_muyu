@@ -314,10 +314,10 @@
     <string name="support_sepc_hid">muyu</string>
     <!-- whether support ble oobhelper-->
     <bool name="support_ble_oobhelper">true</bool>
-    <!-- whether enable the btsnoop default-->
-    <string name="enable_Btsnoop">muyu</string>
     <!-- whether support adaptive samplerate-->
     <bool name="support_adaptive_sampler">true</bool>
+    <!-- whether enable the btsnoop default-->
+    <string name="enable_Btsnoop">muyu</string>
 <!-- Bluethooth END -->
 
 <!-- Display BEGIN -->

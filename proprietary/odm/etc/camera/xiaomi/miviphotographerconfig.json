@@ -29,7 +29,8 @@
             "SupportAnchorQuickview":true,
             "QuickShotConfig"://触发条件
             {
-                "MaxMIVICount":[2,2],//后处理任务数
+                "MaxMIVICount":[1,3],//后处理任务数
+                "PSILimit":20.0,
                 "QuickShotTypeUpdate":
                 [
                     {
@@ -39,7 +40,7 @@
                         {
                             "DevVersion":0,//0低端 1高端  2无限制
                             "ConditionType":0,//与
-                            "ConditionInc":"0x09",// QuickClick && MIVIFull 触发 (1001)
+                            "ConditionInc":"0x309",// QuickClick && MIVIFull 触发 (1001) && highmemoryPressure
                             "ConditionCam":2 // 0rear 1front 2无限制
                         }
                     },
@@ -164,7 +165,8 @@
             "SupportAnchorQuickview":true,
             "QuickShotConfig"://触发条件
             {
-                "MaxMIVICount":[3,3],//后处理任务数
+                "MaxMIVICount":[1,3],//后处理任务数
+                "PSILimit":20.0,
                 "QuickShotTypeUpdate":
                 [
                     {
@@ -174,7 +176,7 @@
                         {
                             "DevVersion":2, //0低端 1高端  2无限制
                             "ConditionType":1,//或
-                            "ConditionInc":"0x04",// MihalMFNRFull （0100）
+                            "ConditionInc":"0x304",// MihalMFNRFull （0100）&& highmemoryPressure
                             "ConditionCam":2 // 0rear 1front 2无限制
                         }
                     },

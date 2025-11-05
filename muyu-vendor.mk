@@ -111,7 +111,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/beauty_config_cn_8g.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_cn_8g.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/beauty_config_gl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_gl.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/beauty_config_gl_8g.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_gl_8g.json \
-    vendor/xiaomi/muyu/proprietary/odm/etc/camera/cameraopt.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt.json \
+    vendor/xiaomi/muyu/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
+    vendor/xiaomi/muyu/proprietary/odm/etc/camera/cameraopt_reclaim.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reclaim.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/deblur_txt_dsp.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_txt_dsp.dlc \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/deblur_txt_gpu.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_txt_gpu.dlc \
@@ -210,25 +211,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/Material/1166466556_2571257293:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/Material/1166466556_2571257293 \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/Material/1166466556_4025145477:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/Material/1166466556_4025145477 \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BASE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BASE.bin \
-    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_ADRENO.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_ADRENO.bin \
-    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin \
-    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS_V2_WITH_PUPIL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS_V2_WITH_PUPIL.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_FUSE_OFFSET.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_DEF_CATMULL_ROM.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
-    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_UVMAP.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
-    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
@@ -245,7 +240,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_VARIANCE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_VARIANCE.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin \
-    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_GUIDE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_GUIDE.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin \
@@ -270,6 +264,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/shader_YUVP010ToYUVP010.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUVP010ToYUVP010.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Config/config_mode_all.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Config/config_mode_all.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Config/config_mode_front.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Config/config_mode_front.json \
+    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Config/config_mode_front_video.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Config/config_mode_front_video.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Config/config_mode_rear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Config/config_mode_rear.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json \
@@ -312,9 +307,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Effect/effect_list.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/effect_list.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Effect/effect_mode_clear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/effect_mode_clear.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Effect/effect_mode_front.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/effect_mode_front.json \
+    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Effect/effect_mode_front_video.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/effect_mode_front_video.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/Effect/effect_mode_rear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/effect_mode_rear.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/render/GlobalConfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/GlobalConfig.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/truesight_config_front.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/truesight_config_front.json \
+    vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/truesight_config_front_video.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/truesight_config_front_video.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/truesight_config_rear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/truesight_config_rear.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/truesight_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/truesight_param.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/camera/resources/truesight_param_debug.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/truesight_param_debug.json \
@@ -1036,7 +1033,6 @@ PRODUCT_PACKAGES += \
     com.xiaomi.zsl.sr \
     fingerprint.fpc.default \
     libawcal \
-    AHBF-V3-service.xml \
     fod-aidl.xml
 
 PRODUCT_PACKAGES += \
