@@ -202,26 +202,7 @@
         {
             //原模式：single bokeh mihal mfnr
             "PhtType":[18],
-            "SupportAnchorQuickview":true,
-             "QuickShotConfig"://触发条件
-            {
-                "MaxMIVICount":[2, -1],//后处理任务数
-                "PSILimit":15.0,
-                "QuickShotTypeUpdate":
-                [
-                    {
-                        "NewType":[18],//不切
-                        "NewFrames":[1],//设置为1帧
-                        "Condition":
-                        {
-                            "DevVersion":2, //0低端 1高端  2无限制
-                            "ConditionType":1,//或
-                            "ConditionInc":"0x300",// highmemoryPressure （11 00000 0000）
-                            "ConditionCam":1 // 0rear 1front 2无限制
-                        }
-                    }
-                ]
-            }
+            "SupportAnchorQuickview":true
         },
 		{
             //原模式：hd upscale
