@@ -546,6 +546,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/muyu/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_o81_42_02_0b_vid_mode_dualdsi_dsc_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_o81_42_02_0b_vid_mode_dualdsi_dsc_panel.json \
     vendor/xiaomi/muyu/proprietary/odm/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/muyu/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
+    vendor/xiaomi/muyu/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.midevauth@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.midevauth@1.0-service.rc \
     vendor/xiaomi/muyu/proprietary/odm/etc/mdss_dsi_o81_36_02_0a_dualdsi_dsc_vid_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_o81_36_02_0a_dualdsi_dsc_vid_mi.xml \
     vendor/xiaomi/muyu/proprietary/odm/etc/mdss_dsi_o81_42_02_0b_dualdsi_dsc_vid_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_o81_42_02_0b_dualdsi_dsc_vid_mi.xml \
     vendor/xiaomi/muyu/proprietary/odm/etc/sensors/config/chre_dynamic_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/chre_dynamic_sensors.json \
@@ -1033,7 +1034,11 @@ PRODUCT_PACKAGES += \
     com.xiaomi.zsl.sr \
     fingerprint.fpc.default \
     libawcal \
-    fod-aidl.xml
+    libmidevauth \
+    vendor.xiaomi.hardware.aidl.midevauth-V1-ndk_platform \
+    fod-aidl.xml \
+    manifest_vendor.xiaomi.hardware.aidl.midevauth.xml \
+    midevauthd
 
 PRODUCT_PACKAGES += \
     vendor_lib64_camera_aon_front_1_pb
